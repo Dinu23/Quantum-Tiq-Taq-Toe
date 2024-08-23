@@ -1,7 +1,3 @@
-Based on the detailed project information you provided, here is a README file tailored to your "Reinforcement Learning for Quantum Tic-Tac-Toe" project:
-
----
-
 # Reinforcement Learning for Quantum Tic-Tac-Toe
 
 This repository contains the code and documentation for exploring reinforcement learning (RL) techniques applied to Quantum Tic-Tac-Toe. The project aims to integrate quantum computing concepts with RL algorithms to create an innovative approach to the classic game of Tic-Tac-Toe.
@@ -113,7 +109,3 @@ Quantum Tic-Tac-Toe is played on a 3x3 board where each cell can be in a superpo
 **Measurements**: Estimated probabilities of each cell being in a specific state based on simulations.
 
 **Move History**: Matrices tracking past moves, including entanglements and classical moves.
-
----
-
-Feel free to adjust any section or add more details as needed!
