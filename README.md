@@ -40,22 +40,20 @@ We use Proximal Policy Optimization (PPO) \cite{schulman2017proximal,tang2020imp
 
 The first set of results shows that the first player tends to have an advantage due to the constraints on entanglement moves. This suggests that certain strategies may be more effective, even within the randomness of the quantum environment.
 
-<img src="figures/reward_v1.png" alt="V3 Reward" width="50"/>
+<img src="figures/reward_v1.png" alt="V1 Reward" width="200"/>
 *Average reward on 100 games during the training of different agents.*
 
-<img src="figures/results_V1.p1" alt="V3 Results" width="50"/>
+<img src="figures/results_V1.png" alt="V1 Results" width="200"/>
 *Pitting best agents: X-Wins, O-Wins, Draws.*
 
 ### Version 3 (V3)
 
 In Version 3, where entanglement constraints are removed, combining measurement matrices with historical entanglement records leads to better performance and more balanced outcomes.
 
-<img src="figures/reward_v3.png" alt="V3 Reward" width="50"/>
-
+<img src="figures/reward_v3.png" alt="V3 Reward" width="200"/>
 *Average reward on 100 games during the training of different agents.*
 
-![V3 Results](figures/results_V3.png)
-
+<img src="figures/results_V3.png" alt="V3 Results" width="200"/>
 *Pitting best agents: X-Wins, O-Wins, Draws.*
 
 ## Discussion
