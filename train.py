@@ -4,7 +4,6 @@ import numpy as np
 from sb3_contrib import MaskablePPO
 from typing import Callable
 from agents import ModelAgent, ModelAgentV2
-from custom_cnn import CustomCNN
 from environment import QuantumTiqTaqToeV2
 from sb3_contrib.common.wrappers import ActionMasker
 import torch

@@ -1,0 +1,8 @@
+gymnasium==0.29.1
+matplotlib==3.9.2
+numpy==1.26.4
+sb3_contrib==2.3.0
+scipy==1.13.1
+sympy==1.13.2
+tensorflow==2.17.0
+torch==2.4.0
