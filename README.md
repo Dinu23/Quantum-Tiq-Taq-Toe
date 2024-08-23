@@ -50,10 +50,12 @@ The first set of results shows that the first player tends to have an advantage 
 
 In Version 3, where entanglement constraints are removed, combining measurement matrices with historical entanglement records leads to better performance and more balanced outcomes.
 
-![V3 Reward](figures/reward_v3.png)
+<img src="figures/reward_v3.png" alt="V3 Reward" width="200"/>
+
 *Average reward on 100 games during the training of different agents.*
 
 ![V3 Results](figures/results_V3.png)
+
 *Pitting best agents: X-Wins, O-Wins, Draws.*
 
 ## Discussion
