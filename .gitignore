@@ -1,6 +1,8 @@
 images/
 log_data/
 logs/
+unitary/
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]

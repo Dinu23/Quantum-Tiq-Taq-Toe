@@ -62,31 +62,101 @@ Quantum Tic-Tac-Toe offers a valuable testbed for RL in quantum settings. The re
 
 ## Installation
 
-To get started with this project:
+To get started with this project, follow these steps:
 
 1. **Clone the Repository**
 
    ```bash
    git clone https://github.com/Dinu23/Quantum-Tiq-Taq-Toe.git
-   cd Quantum-Tiq-Taq-Toe
+   cd Quantum-Tiq-Tac-Toe
    ```
 
-2. **Install Dependencies**
+2. **Install Unitary**
 
-   Make sure you have Python installed, then install the necessary packages:
+   Unitary is not available as a PyPI package. You need to clone the repository and install it from source:
+
+   ```bash
+   git clone https://github.com/unitaryfund/unitary.git
+   cd unitary
+   pip install .
+   ```
+
+3. **Install Other Dependencies**
+
+   Make sure you have the necessary Python packages installed:
 
    ```bash
    pip install -r requirements.txt
    ```
 
-3. **Run the Code**
+4. **Run the Code**
 
-   Execute the main script to start training and evaluating RL agents:
+   You can use the following scripts to train and play the Quantum Tic-Tac-Toe game:
+
+   - **Train the RL Agent**: 
+
+     ```bash
+     python train.py --rules <V1|V3> --measuremnt <True|False> --moves <True|False> --network <32,32,16> -N <100> -t <10000> -s <1024> -lr <0.01> --linear <True|False> -m <1> -f <models> -l <logs> -v <1> -d <cpu|cuda>
+     ```
+
+     Here’s a description of each argument:
+
+     - `--rules`: The version of the game rules to use (default: "V1").
+     - `--measuremnt`: Whether to use measurement information (default: True).
+     - `--moves`: Whether to use move history information (default: True).
+     - `--network`: List of integers defining the network architecture (default: [32,32,16]).
+     - `-N` / `--N`: Number of enemy changes (default: 100).
+     - `-t` / `--timestemps`: Number of timesteps to train the model (default: 10000).
+     - `-s` / `--no_steps`: Number of steps per training session (default: 1024).
+     - `-lr` / `--lr`: Learning rate (default: 0.01).
+     - `--linear`: Whether to use a linear learning rate (default: True).
+     - `-m` / `--modifier`: Modifier for training the O player more (default: 1).
+     - `-f` / `--folder`: Folder to save models (default: "models").
+     - `-l` / `--logs`: File for logs (default: 'logs').
+     - `-v` / `--verbose`: Verbosity level (default: 1).
+     - `-d` / `--device`: Device to use for training ('cpu' or 'cuda', default: 'cpu').
+
+   - **Play the Game**:
+
+     ```bash
+     python play.py -V <1|3> -X <human|random|model> -O <human|random|model> -pathX <path_to_X_agent> -pathO <path_to_O_agent> --measurmentX <True|False> --movesX <True|False> --measurmentO <True|False> --movesO <True|False>
+     ```
+
+     Here’s a description of each argument:
+
+     - `-V`: The version of the game rules to use (1 or 3, default: 3).
+     - `-X`: Type of agent for player X (options: "human", "random", "model", default: "random").
+     - `-O`: Type of agent for player O (options: "human", "random", "model", default: "random").
+     - `-pathX`: Path to the model for player X (required if X is "model").
+     - `-pathO`: Path to the model for player O (required if O is "model").
+     - `--measurmentX`: Whether to use measurement information for player X (default: True).
+     - `--movesX`: Whether to use move history information for player X (default: True).
+     - `--measurmentO`: Whether to use measurement information for player O (default: True).
+     - `--movesO`: Whether to use move history information for player O (default: True).
+
+## Contributing
+
+We welcome contributions from the community! To contribute:
+
+1. **Fork the Repository**
+
+2. **Create a Feature Branch**
 
    ```bash
-   python main.py
+   git checkout -b feature/YourFeatureName
    ```
 
+3. **Commit Your Changes**
+
+   ```bash
+   git commit -am 'Add new feature'
+   ```
+
+4. **Push to the Branch**
+
+   ```bash
+   git push origin feature/YourFeatureName
+   ```
 
 ## Contact
 
@@ -108,4 +178,4 @@ Quantum Tic-Tac-Toe is played on a 3x3 board where each cell can be in a superpo
 
 **Measurements**: Estimated probabilities of each cell being in a specific state based on simulations.
 
-**Move History**: Matrices tracking past moves, including entanglements and classical moves.
+**Move History**: Matrix tracking historical entanglement relations.
