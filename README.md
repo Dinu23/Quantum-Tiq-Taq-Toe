@@ -4,9 +4,9 @@ This repository contains the code and documentation for exploring reinforcement 
 
 ## Introduction
 
-Quantum Tic-Tac-Toe \cite{goff2006quantum} is an extended version of the classic Tic-Tac-Toe game that incorporates quantum mechanics, such as superposition and entanglement, into the gameplay. This project explores the application of reinforcement learning methods to Quantum Tic-Tac-Toe, providing insights into how RL can be leveraged in quantum environments.
+Quantum Tic-Tac-Toe is an extended version of the classic Tic-Tac-Toe game that incorporates quantum mechanics, such as superposition and entanglement, into the gameplay. This project explores the application of reinforcement learning methods to Quantum Tic-Tac-Toe, providing insights into how RL can be leveraged in quantum environments.
 
-Despite the availability of Quantum Chess \cite{youvan2024sequential,cantwell2019quantum}, which is more complex, Quantum Tic-Tac-Toe serves as a more accessible testbed for combining quantum computing and RL. Our approach includes the following:
+Despite the availability of Quantum Chess which is more complex, Quantum Tic-Tac-Toe serves as a more accessible testbed for combining quantum computing and RL. Our approach includes the following:
 
 - **Two Versions of the Game**: Each with different rules regarding entanglement moves.
 - **Reinforcement Learning Agents**: Implementing and comparing different RL strategies.
@@ -32,7 +32,7 @@ Quantum Tic-Tac-Toe features challenges such as partial observability and expone
 
 ### Reinforcement Learning
 
-We use Proximal Policy Optimization (PPO) \cite{schulman2017proximal,tang2020implementing,liu2021self} to train agents in Quantum Tic-Tac-Toe. Agents are compared based on their performance with different types of information (measurement matrices, historical entanglement records).
+We use Proximal Policy Optimization (PPO)  to train agents in Quantum Tic-Tac-Toe. Agents are compared based on their performance with different types of information (measurement matrices, historical entanglement records).
 
 ## Results
 
